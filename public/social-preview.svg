@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#059669" />
+      <stop offset="1" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)" />
+  <g transform="translate(60,60)">
+    <circle cx="80" cy="80" r="60" fill="#fff" opacity="0.12" />
+    <g transform="translate(40,20)">
+      <path d="M80 10 C100 10 120 30 120 50 C120 90 40 110 40 70 C40 40 60 10 80 10 Z" fill="#fff"/>
+      <circle cx="60" cy="60" r="6" fill="#333" />
+    </g>
+    <g transform="translate(180,30)">
+      <text x="0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="48" fill="#fff" font-weight="700">Tienda de Perritos</text>
+      <text x="0" y="68" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#e6fff2">Perritos con vacunas y garantía de salud</text>
+    </g>
+  </g>
+</svg>

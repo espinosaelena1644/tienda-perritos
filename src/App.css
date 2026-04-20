@@ -182,3 +182,24 @@
     border-right-color: var(--border);
   }
 }
+
+/* Added professional styles for Tienda Perritos */
+.header-hero{background:linear-gradient(135deg,#059669,#10b981);color:white;padding:48px 20px 32px;text-align:center}
+.logo-img{width:96px;height:96px;border-radius:50%;object-fit:cover}
+.social-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
+.social-btn{background:rgba(255,255,255,0.15);color:white;padding:8px 14px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.filters{display:flex;justify-content:center;gap:12px;margin-top:-24px}
+.filter-btn{background:white;border-radius:999px;padding:8px 18px;border:1px solid rgba(6,95,70,0.06);cursor:pointer}
+.filter-btn.active{background:#10b981;color:white;border:none}
+.container{max-width:1100px;margin:0 auto;padding:0 18px 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:white;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06);position:relative}
+.card img{width:100%;border-radius:10px;object-fit:cover;height:160px}
+.badge{padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
+.badge.available{background:#ecfdf5;color:#059669}
+.badge.sold{background:#fff1f2;color:#ef4444}
+.price{font-weight:800;color:#047857;font-size:20px}
+.whatsapp-btn{display:inline-block;background:#10b981;color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+.methods{margin-top:28px;background:white;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.03)}
+.method-card{min-width:160px;padding:16px;border-radius:12px;color:white}
+.footer{color:var(--muted);text-align:center;padding:20px}

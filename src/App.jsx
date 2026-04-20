@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heroImg from "./assets/hero.png";
+import "./App.css";
 
 export default function App() {
   // Datos de ejemplo (perritos)
@@ -52,7 +52,13 @@ export default function App() {
       <header style={{ background: "linear-gradient(135deg,#059669,#10b981)", color: "white", padding: "48px 20px 32px", textAlign: "center" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
-            <img src={heroImg} alt="Perro" style={{ width: 96, height: 96, objectFit: "cover" }} />
+            {/* Inline SVG logo to avoid missing asset */}
+            <svg className="logo-img" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="60" cy="60" r="60" fill="#fff" opacity="0.08" />
+              <path d="M30 75 C30 55 50 45 60 45 C70 45 90 55 90 75 C90 95 60 110 60 110 C60 110 30 95 30 75 Z" fill="#fff" opacity="0.95" />
+              <circle cx="45" cy="65" r="6" fill="#333" />
+              <circle cx="75" cy="65" r="6" fill="#333" />
+            </svg>
             <h1 style={{ margin: 0, fontSize: 36, fontWeight: 800 }}>Tienda de Perritos</h1>
           </div>
           <p style={{ margin: "8px 0 18px", opacity: 0.95 }}>Rionegro, Antioquia — Tu nuevo mejor amigo te espera</p>
