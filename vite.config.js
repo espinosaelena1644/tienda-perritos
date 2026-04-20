@@ -9,3 +9,7 @@ export default defineConfig({
     port: 5173
   }
 })
+
+// Cambiar directorio y ejecutar el servidor de desarrollo
+process.chdir('C:\\Users\\Administrador\\tienda-perritos')
+require('child_process').exec('npm run dev')
