@@ -4,39 +4,48 @@ import "./App.css";
 const dogs = [
   {
     id: 1,
-    name: "Border Collie",
-    age: "2 meses",
-    description: "El más inteligente de todas las razas. Enérgico, leal y fácil de entrenar.",
-    price: "$1.800.000",
+    name: "Border Collie Tradicional",
+    age: "Entrega después de los 45 días",
+    description: "El más inteligente de todas las razas. Enérgico, leal y fácil de entrenar. Se entrega con primera vacuna y desparasitado.",
+    price: "Desde $600.000",
     available: true,
-    image: "https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?w=500&h=350&fit=crop&auto=format",
+    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/border-collie.png",
   },
   {
     id: 2,
-    name: "Pomerania",
-    age: "2 meses",
-    description: "Pequeño y esponjoso con una personalidad enorme. Ideal para apartamentos.",
-    price: "$2.000.000",
+    name: "Border Collie ",
+    age: "Entrega después de los 45 días",
+    description: "Hermoso Border Collie de pelaje merle, único por su coloración. Inteligente, activo y muy apegado a su familia. Se entrega con primera vacuna y desparasitado.",
+    price: "Desde $1.000.000",
     available: true,
-    image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&h=350&fit=crop&auto=format",
+    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/border-collie-merlet.png",
   },
   {
     id: 3,
-    name: "Chihuahua",
-    age: "2 meses",
-    description: "El más pequeño de las razas pero con un corazón gigante. Valiente y apegado.",
-    price: "$900.000",
+    name: "Pomerania",
+    age: "Entrega después de los 45 días",
+    description: "Pequeño y esponjoso con una personalidad enorme. Ideal para apartamentos. Se entrega con primera vacuna y desparasitado.",
+    price: "Desde $1.300.000",
     available: true,
-    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&h=350&fit=crop&auto=format",
+    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/pomerania.png",
   },
   {
     id: 4,
-    name: "Ponchi",
-    age: "3 meses",
-    description: "Mestizo encantador, único e irrepetible. Lleno de amor y personalidad propia.",
-    price: "$500.000",
+    name: "Chihuahua",
+    age: "Entrega después de los 45 días",
+    description: "El más pequeño de las razas pero con un corazón gigante. Valiente y muy apegado. Se entrega con primera vacuna y desparasitado.",
+    price: "Desde $1.300.000",
     available: true,
-    image: "https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=500&h=350&fit=crop&auto=format",
+    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/chihuahua.png",
+  },
+  {
+    id: 5,
+    name: "Ponchi",
+    age: "Entrega después de los 45 días",
+    description: "Mestizo encantador, único e irrepetible. Lleno de amor y personalidad propia. Se entrega con primera vacuna y desparasitado.",
+    price: "Desde $1.000.000",
+    available: true,
+    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/ponchi.png",
   },
 ];
 
@@ -50,7 +59,7 @@ function App() {
     : dogs;
 
   const handleWhatsApp = (dogName) => {
-    const msg = encodeURIComponent(`Hola! Me interesa el ${dogName}, ¿está disponible?`);
+    const msg = encodeURIComponent(`Hola! Me interesa el ${dogName} de Cuna_Canina Rionegro, ¿está disponible?`);
     window.open(`https://wa.me/${WHATSAPP}?text=${msg}`, "_blank");
   };
 
@@ -59,9 +68,12 @@ function App() {
       <header className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="paw">🐾</span> Tienda de Perritos
+            <span className="paw">🐾</span> Cuna_Canina Rionegro
           </h1>
           <p className="hero-sub">Rionegro, Antioquia — Tu nuevo mejor amigo te espera</p>
+          <p className="hero-sub" style={{ fontSize: "0.85rem", opacity: 0.8 }}>
+            Todos nuestros cachorros se entregan con primera vacuna y desparasitados 💉
+          </p>
           <div className="hero-buttons">
             <a className="btn btn-whatsapp" href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer">
               WhatsApp
@@ -105,8 +117,9 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>🐾 Tienda de Perritos · Rionegro, Antioquia</p>
+        <p>🐾 Cuna_Canina Rionegro · Rionegro, Antioquia</p>
         <p>📞 3017705620</p>
+        <p>Todos los cachorros se entregan con primera vacuna y desparasitados 💉</p>
       </footer>
     </div>
   );
