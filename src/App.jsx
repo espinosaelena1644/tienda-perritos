@@ -40,7 +40,7 @@ const dogs = [
   },
 ];
 
-const WHATSAPP = "573217623760";
+const WHATSAPP = "573017705620";
 
 function App() {
   const [filter, setFilter] = useState("todos");
@@ -56,7 +56,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* HERO */}
       <header className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
@@ -64,48 +63,30 @@ function App() {
           </h1>
           <p className="hero-sub">Rionegro, Antioquia — Tu nuevo mejor amigo te espera</p>
           <div className="hero-buttons">
-            <a
-              className="btn btn-whatsapp"
-              href={`https://wa.me/${WHATSAPP}`}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="btn btn-whatsapp" href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer">
               WhatsApp
             </a>
             <a className="btn btn-phone" href={`tel:+${WHATSAPP}`}>
-              📞 3217623760
+              📞 3017705620
             </a>
           </div>
         </div>
       </header>
 
-      {/* FILTROS */}
       <div className="filters">
-        <button
-          className={`filter-btn ${filter === "todos" ? "active" : ""}`}
-          onClick={() => setFilter("todos")}
-        >
+        <button className={`filter-btn ${filter === "todos" ? "active" : ""}`} onClick={() => setFilter("todos")}>
           Todos
         </button>
-        <button
-          className={`filter-btn ${filter === "disponibles" ? "active" : ""}`}
-          onClick={() => setFilter("disponibles")}
-        >
+        <button className={`filter-btn ${filter === "disponibles" ? "active" : ""}`} onClick={() => setFilter("disponibles")}>
           Disponibles
         </button>
       </div>
 
-      {/* GRID */}
       <main className="grid">
         {filtered.map((dog) => (
           <div className="card" key={dog.id}>
             <div className="card-img-wrapper">
-              <img
-                src={dog.image}
-                alt={dog.name}
-                className="card-img"
-                loading="lazy"
-              />
+              <img src={dog.image} alt={dog.name} className="card-img" loading="lazy" />
               <span className={`badge ${dog.available ? "badge-available" : "badge-sold"}`}>
                 {dog.available ? "Disponible" : "Agotado"}
               </span>
@@ -115,11 +96,7 @@ function App() {
               <p className="card-age">Edad: {dog.age}</p>
               <p className="card-desc">{dog.description}</p>
               <p className="card-price">{dog.price}</p>
-              <button
-                className="btn-card"
-                disabled={!dog.available}
-                onClick={() => handleWhatsApp(dog.name)}
-              >
+              <button className="btn-card" disabled={!dog.available} onClick={() => handleWhatsApp(dog.name)}>
                 {dog.available ? "💬 Preguntar por WhatsApp" : "No disponible"}
               </button>
             </div>
@@ -127,10 +104,9 @@ function App() {
         ))}
       </main>
 
-      {/* FOOTER */}
       <footer className="footer">
         <p>🐾 Tienda de Perritos · Rionegro, Antioquia</p>
-        <p>📞 3217623760</p>
+        <p>📞 3017705620</p>
       </footer>
     </div>
   );
