@@ -13,7 +13,7 @@ const dogs = [
   },
   {
     id: 2,
-    name: "Border Collie ",
+    name: "Border Collie Merlet",
     age: "Entrega después de los 45 días",
     description: "Hermoso Border Collie de pelaje merle, único por su coloración. Inteligente, activo y muy apegado a su familia. Se entrega con primera vacuna y desparasitado.",
     price: "Desde $1.000.000",
@@ -105,7 +105,7 @@ function App() {
             </div>
             <div className="card-body">
               <h2 className="card-name">{dog.name}</h2>
-              <p className="card-age">Edad: {dog.age}</p>
+              <p className="card-age">{dog.age}</p>
               <p className="card-desc">{dog.description}</p>
               <p className="card-price">{dog.price}</p>
               <button className="btn-card" disabled={!dog.available} onClick={() => handleWhatsApp(dog.name)}>
