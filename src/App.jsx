@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const LOGO = "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/logo.png";
+const LOGO = "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/logo.JPG";
 
 const dogs = [
   {
@@ -29,7 +29,7 @@ const dogs = [
     description: "Pequeño y esponjoso con una personalidad enorme. Ideal para apartamentos. Se entrega con primera vacuna y desparasitado.",
     price: "Desde $1.300.000",
     available: true,
-    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/pomerania.png",
+    image: "https://raw.githubusercontent.com/espinosaelena1644/tienda-perritos/main/pomerania.JPG",
   },
   {
     id: 4,
